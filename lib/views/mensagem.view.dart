@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_2/models/mensagem.model.dart';
 
 class MensagemView extends StatelessWidget {
   @override
@@ -21,26 +22,14 @@ class MensagemView extends StatelessWidget {
               Tab(child: Text("LIGAÇÕES"),)
             ]),
         ),
-        body: Row(
+        body: const TabBarView(
           children: [
-            Column(
-              children: [
-                
-              ],
-            ),
-            Column(
-              children: [
-                Text("Nome"),
-                Text("Ultima Mensagem")
-              ],
-            ),
-            Column(
-              children: [
-                Text("20:00"),
-                Text("2")
-              ],
-            ),
-          ]),
+            Center(child: Text('Em breve negão')),
+            ChatPessoal(),
+            Center(child: Text('Em breve negão')),
+            Center(child: Text('Em breve negão')),
+          ]
+        ),
       ),
     );
   }
